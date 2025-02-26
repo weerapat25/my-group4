@@ -1,0 +1,7 @@
+services:
+  web:
+    image: ${APP_NAME}:${TAG}
+    ports:
+      - ${PORT}:3000
+    labels:
+      - COMPOSE_PATH=${PWD}
